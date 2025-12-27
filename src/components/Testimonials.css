@@ -1,0 +1,59 @@
+.testimonials {
+    padding: 5rem 0;
+    background-color: var(--bg-light);
+    overflow: hidden;
+}
+
+.testimonial-slider {
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    /* Ensure the slider has a width to mask the track */
+}
+
+.testimonial-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+    /* Ensure track takes up full width relative to parent */
+}
+
+.testimonial-card {
+    min-width: 100%;
+    /* Each card takes up 100% of the slider view */
+    padding: 2rem;
+    background: var(--white);
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    text-align: center;
+    position: relative;
+    /* Flexbox adjustments to prevent shrinking */
+    flex-shrink: 0;
+}
+
+.quote-icon {
+    font-size: 4rem;
+    color: var(--accent-color);
+    line-height: 1;
+    margin-bottom: 1rem;
+    font-family: serif;
+    opacity: 0.3;
+}
+
+.testimonial-text {
+    font-size: 1.25rem;
+    font-style: italic;
+    color: var(--text-dark);
+    margin-bottom: 2rem;
+}
+
+.client-info h4 {
+    color: var(--primary-color);
+    margin-bottom: 0.2rem;
+}
+
+.client-info p {
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
